@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ヒラギノ角ゴシック W4.ttc">
+            <string>HiraginoSans-W4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GooIDView" customModule="GooDic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYp-Cr-Grc">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jN0-wc-rs9">
+                            <rect key="frame" x="16" y="0.0" width="382" height="160"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgV-5O-bgn" customClass="BorderView" customModule="GooDic" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="100"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="yrh-aA-cCY">
+                                            <rect key="frame" x="20" y="12" width="342" height="73"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gooIDをお持ちの方、プレミアム登録済の方" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfK-lw-edd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="qxi-0b-8dH"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOT-GL-Vg1" customClass="BorderButton" customModule="GooDic" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="29" width="342" height="44"/>
+                                                    <color key="backgroundColor" red="0.80000000000000004" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="VkC-J3-z2s"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                                                    <state key="normal" title="ログイン">
+                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="BgGooDID"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="yrh-aA-cCY" secondAttribute="trailing" constant="20" id="Sor-Xn-Dmm"/>
+                                        <constraint firstAttribute="bottom" secondItem="yrh-aA-cCY" secondAttribute="bottom" constant="15" id="UYU-LL-m6l"/>
+                                        <constraint firstItem="yrh-aA-cCY" firstAttribute="leading" secondItem="LgV-5O-bgn" secondAttribute="leading" constant="20" id="idp-5h-6Aj"/>
+                                        <constraint firstItem="yrh-aA-cCY" firstAttribute="top" secondItem="LgV-5O-bgn" secondAttribute="top" constant="12" id="jDL-gK-Ajb"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="En6-19-600" customClass="BorderButton" customModule="GooDic" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="116" width="382" height="44"/>
+                                    <color key="backgroundColor" name="ButtonNotRegister"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="P63-Oj-g5G"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                                    <state key="normal" title="ログインしない">
+                                        <color key="titleColor" name="TextButtonNotRegister"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" name="BorderButtonListDevice"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="Background"/>
+                    <constraints>
+                        <constraint firstItem="jN0-wc-rs9" firstAttribute="top" secondItem="yYp-Cr-Grc" secondAttribute="top" id="2lg-Bb-K4s"/>
+                        <constraint firstAttribute="bottom" secondItem="jN0-wc-rs9" secondAttribute="bottom" constant="10" id="UbA-MB-FgS"/>
+                        <constraint firstAttribute="trailing" secondItem="jN0-wc-rs9" secondAttribute="trailing" constant="16" id="WLn-Mg-knJ"/>
+                        <constraint firstItem="jN0-wc-rs9" firstAttribute="leading" secondItem="yYp-Cr-Grc" secondAttribute="leading" constant="16" id="jag-ph-lBQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="Background"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="yYp-Cr-Grc" secondAttribute="bottom" id="OWi-Da-kCu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yYp-Cr-Grc" secondAttribute="trailing" id="hty-l0-kZn"/>
+                <constraint firstItem="yYp-Cr-Grc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="m6d-kF-6X0"/>
+                <constraint firstItem="yYp-Cr-Grc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="wCX-8Z-cIj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btLogin" destination="vOT-GL-Vg1" id="pzi-Wo-aHU"/>
+                <outlet property="btNotLogin" destination="En6-19-600" id="FSz-tV-ow5"/>
+                <outlet property="constraintBottomStackView" destination="UYU-LL-m6l" id="juA-nT-FlV"/>
+                <outlet property="constraintLeftStackView" destination="idp-5h-6Aj" id="4Q6-9u-Dt2"/>
+                <outlet property="constraintRightStackView" destination="Sor-Xn-Dmm" id="7JW-Ni-6zd"/>
+                <outlet property="constraintTopStackView" destination="jDL-gK-Ajb" id="4Dg-mM-ojt"/>
+                <outlet property="lblTitle" destination="JfK-lw-edd" id="YMI-KW-jl3"/>
+                <outlet property="viewBorder" destination="LgV-5O-bgn" id="hrj-NV-DU1"/>
+                <outlet property="viewContent" destination="yYp-Cr-Grc" id="3El-kt-taB"/>
+            </connections>
+            <point key="canvasLocation" x="-197.10144927536234" y="49.320652173913047"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="En6-19-600">
+            <size key="intrinsicContentSize" width="105" height="27"/>
+        </designable>
+        <designable name="vOT-GL-Vg1">
+            <size key="intrinsicContentSize" width="60" height="27"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BgGooDID">
+            <color red="0.95294117647058818" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BorderButtonListDevice">
+            <color red="0.80800002813339233" green="0.80800002813339233" blue="0.80800002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonNotRegister">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextButtonNotRegister">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

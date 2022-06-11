@@ -1,0 +1,70 @@
+//
+//  Production.xcconfig
+//  GooDic
+//
+//  Created by ttvu on 6/15/20.
+//  Copyright © 2020 paxcreation. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+//-------------------------------------------
+// Server URL
+WEB_SCHEME = https:/$()/
+WEB_HOST = goo-dict.web.app
+
+WEBVIEW_SCHEME = https:/$()/
+WEBVIEW_HOST = dictionary.goo.ne.jp
+WEBVIEW_FEEDBACK_PATH = /feedback
+WEBVIEW_DICT_PATH = /srch/app
+
+API_SCHEME = https:/$()/
+API_HOST = dictapp.goo.ne.jp
+API_THSRS_PATH = /api/v2/thsrs/
+API_IDIOM_PATH = /api/v2/idiom/
+API_SUGGEST_PATH = /api/v2/suggest/
+API_LIST_DEVICE = /api/v2/devices/
+API_DELETE_DEVICE = /api/v2/devices/delete/
+API_ADD_DEVICE = /api/v2/devices/add/
+API_VALIDATION_SERVER = /api/v2/status/
+API_IOS_DEVICE_NAME = /api/v2/ios_device_name/
+API_ACCOUNT_INFO = /api/v2/account/
+API_GET_DRAFTS = /api/v2/documents/
+API_GET_DRAFT_DETAIL = /api/v2/documents/
+API_ADD_DRAFT = /api/v2/documents/add/
+API_DELETE_DRAFT = /api/v2/documents/delete/
+API_MOVE_DRAFTS = /api/v2/documents/move/
+API_GET_FOLDERS = /api/v2/folders/
+API_ADD_FOLDER = /api/v2/folders/add/
+API_DELETE_FOLDER = /api/v2/folders/delete/
+API_FOLDERS_SORT = /api/v2/folders/sort/
+API_DRAFT_SORT = /api/v2/folder_settings/
+API_DRAFT_SORT_MANUAL = /api/v2/documents/sort/
+API_VERIFY_RECEIPT = /api/v1/apple/verifyReceipt
+API_BILLING_STATUS = /api/v2/billing_status/
+API_WEB_SETTINGS = /api/v2/web_settings/
+API_BACKUP_CHECK = /api/v2/documents/backup_check/
+API_GET_BACKUP_DRAFTS = /api/v2/documents/%@/backups
+API_GET_BACKUP_DRAFT_DETAIL = /api/v2/documents/%@/backups/%@/
+API_BACKUP_DRAFT_RESTORE = /api/v2/documents/%@/backups/%@/restore/
+API_ADD_BACKUP = /api/v2/documents/%@/backups/add/
+
+API_RR_HOST = rights.goo.ne.jp
+SUBCRIPTION_ID = jp.ne.goo.dict.pro.subscription.plan1
+
+//-------------------------------------------
+// App Settings
+APP_NAME = idraft
+APP_BUNDLE_ID = jp.ne.goo.dict.pro
+
+//-------------------------------------------
+// GooID SDK Settings
+GOOID_GooidLoginDomain = login.mail.goo.ne.jp
+GOOID_GooidServiceid = dictionary.goo.ne.jp
+GOOID_FacebookAppID = 326091164136783
+GOOID_FacebookDisplayName = goo
+GOOID_FacebookUrlSchemeSuffix = dictpro
+GOOID_GooidGoogleClientID = 790517138767-q3e4hh5ahejbcnnc4r2mgssclqt8flb1.apps.googleusercontent.com
+GOOID_CFBundleURLSchemes_FB = fb326091164136783dictpro
+GOOID_CFBundleURLSchemes_GG = com.googleusercontent.apps.790517138767-q3e4hh5ahejbcnnc4r2mgssclqt8flb1

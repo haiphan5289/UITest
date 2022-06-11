@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="fvj-la-xdH">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="qsp-Pc-Plh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhv-xs-pS0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1680" y="1"/>
+        </scene>
+        <!--フォルダ-->
+        <scene sceneID="FLR-5e-Pas">
+            <objects>
+                <viewController storyboardIdentifier="FolderBrowserViewController" id="cM0-sF-1gF" customClass="FolderBrowserViewController" customModule="GooDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SMm-Yc-aKv">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nCs-iY-Z9t">
+                                <rect key="frame" x="0.0" y="152" width="390" height="692"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="qsp-Pc-Plh" kind="embed" id="NBo-0b-Gig"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rff-2V-4HD">
+                                <rect key="frame" x="0.0" y="88" width="390" height="64"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pIJ-Wc-VQS">
+                                        <rect key="frame" x="16" y="14.666666666666671" width="358" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="cbv-K7-ecy"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="端末"/>
+                                            <segment title="クラウド"/>
+                                        </segments>
+                                        <color key="selectedSegmentTintColor" name="SegmentedColor"/>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pIJ-Wc-VQS" secondAttribute="trailing" constant="16" id="LJM-up-SSy"/>
+                                    <constraint firstItem="pIJ-Wc-VQS" firstAttribute="centerY" secondItem="rff-2V-4HD" secondAttribute="centerY" id="Vsx-4T-RnL"/>
+                                    <constraint firstItem="pIJ-Wc-VQS" firstAttribute="leading" secondItem="rff-2V-4HD" secondAttribute="leading" constant="16" id="YVF-K4-HM1"/>
+                                    <constraint firstAttribute="height" constant="64" id="syT-W1-EGX"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtN-BS-hiL" customClass="CapsuleButton" customModule="GooDic" customModuleProvider="target">
+                                <rect key="frame" x="305" y="725" width="60" height="60"/>
+                                <color key="backgroundColor" name="Highlight"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Em8-7P-ycy"/>
+                                    <constraint firstAttribute="width" constant="60" id="m82-hv-dIg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="ic_addFolder"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vjv-Nl-58o"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="Vjv-Nl-58o" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="nCs-iY-Z9t" secondAttribute="trailing" id="J5O-JC-tas">
+                                <variation key="heightClass=regular-widthClass=regular" constant="128"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="PtN-BS-hiL" secondAttribute="bottom" constant="59" id="NRp-JU-CKK"/>
+                            <constraint firstAttribute="bottom" secondItem="nCs-iY-Z9t" secondAttribute="bottom" id="R1P-Vu-RH4"/>
+                            <constraint firstItem="nCs-iY-Z9t" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Vjv-Nl-58o" secondAttribute="leading" id="U6A-3f-Xed">
+                                <variation key="heightClass=regular-widthClass=regular" constant="128"/>
+                            </constraint>
+                            <constraint firstItem="nCs-iY-Z9t" firstAttribute="centerX" secondItem="SMm-Yc-aKv" secondAttribute="centerX" id="b1c-Dv-5kz"/>
+                            <constraint firstItem="nCs-iY-Z9t" firstAttribute="width" secondItem="SMm-Yc-aKv" secondAttribute="height" priority="750" id="d8h-r9-skl"/>
+                            <constraint firstItem="nCs-iY-Z9t" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Vjv-Nl-58o" secondAttribute="leading" id="fOx-iY-pZ8"/>
+                            <constraint firstItem="rff-2V-4HD" firstAttribute="width" secondItem="nCs-iY-Z9t" secondAttribute="width" id="hJx-4v-t87"/>
+                            <constraint firstItem="rff-2V-4HD" firstAttribute="centerX" secondItem="nCs-iY-Z9t" secondAttribute="centerX" id="hUe-mh-UVG"/>
+                            <constraint firstItem="nCs-iY-Z9t" firstAttribute="top" secondItem="rff-2V-4HD" secondAttribute="bottom" id="jC6-h9-UBI"/>
+                            <constraint firstItem="Vjv-Nl-58o" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nCs-iY-Z9t" secondAttribute="trailing" id="ptn-Pn-CFz"/>
+                            <constraint firstItem="Vjv-Nl-58o" firstAttribute="trailing" secondItem="PtN-BS-hiL" secondAttribute="trailing" constant="25" id="t8g-mL-jhW"/>
+                            <constraint firstItem="rff-2V-4HD" firstAttribute="top" secondItem="Vjv-Nl-58o" secondAttribute="top" id="ze0-j9-a3F"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="フォルダ" id="AxV-Ei-lrg">
+                        <barButtonItem key="leftBarButtonItem" image="ic_dismiss" id="vu2-wv-TYj"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bottomButton" destination="NRp-JU-CKK" id="VNH-1t-bbV"/>
+                        <outlet property="creationButton" destination="PtN-BS-hiL" id="mks-Ty-eIN"/>
+                        <outlet property="dismissButton" destination="vu2-wv-TYj" id="Wmz-cu-dyK"/>
+                        <outlet property="segmentedControl" destination="pIJ-Wc-VQS" id="FZP-qa-YrO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sHk-o7-w9V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910.14492753623199" y="1.3392857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="m3x-Zs-gaj">
+            <objects>
+                <navigationController storyboardIdentifier="FolderNC" automaticallyAdjustsScrollViewInsets="NO" id="6da-lT-Ep7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N2h-Wf-igE">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cM0-sF-1gF" kind="relationship" relationship="rootViewController" id="ife-bs-Jzm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2LP-Fi-o7O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="1.3392857142857142"/>
+        </scene>
+        <!--移動先を選択-->
+        <scene sceneID="6gq-L4-RMs">
+            <objects>
+                <viewController storyboardIdentifier="LocalFolderSelectionViewController" id="5EO-8Y-a7J" customClass="LocalFolderSelectionViewController" customModule="GooDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hBA-c3-ew8">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wg2-Rj-gzy">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <color key="backgroundColor" name="Background"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KJh-oT-dqR"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="wg2-Rj-gzy" firstAttribute="leading" secondItem="KJh-oT-dqR" secondAttribute="leading" id="Gva-qD-Rwp"/>
+                            <constraint firstItem="KJh-oT-dqR" firstAttribute="trailing" secondItem="wg2-Rj-gzy" secondAttribute="trailing" id="bII-Pt-fgu"/>
+                            <constraint firstAttribute="bottom" secondItem="wg2-Rj-gzy" secondAttribute="bottom" id="qeU-tG-Urr"/>
+                            <constraint firstItem="wg2-Rj-gzy" firstAttribute="top" secondItem="hBA-c3-ew8" secondAttribute="top" id="wuy-9H-Xjc"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="移動先を選択" id="9Kl-Sd-G7X"/>
+                    <connections>
+                        <outlet property="tableView" destination="wg2-Rj-gzy" id="cUR-9g-qVs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8oz-XU-oUA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2700" y="641"/>
+        </scene>
+        <!--フォルダ-->
+        <scene sceneID="MSd-Du-BvK">
+            <objects>
+                <viewController storyboardIdentifier="LocalFoldersViewController" id="0Da-gR-Ap2" customClass="LocalFoldersViewController" customModule="GooDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o8v-F7-005">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RhX-FF-J0t">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <color key="backgroundColor" name="Background"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="A1L-m5-ZDb"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="RhX-FF-J0t" firstAttribute="top" secondItem="o8v-F7-005" secondAttribute="top" id="2nv-Wp-IPm"/>
+                            <constraint firstItem="RhX-FF-J0t" firstAttribute="leading" secondItem="A1L-m5-ZDb" secondAttribute="leading" id="Dms-6E-BxA"/>
+                            <constraint firstItem="A1L-m5-ZDb" firstAttribute="trailing" secondItem="RhX-FF-J0t" secondAttribute="trailing" id="Zwq-Ue-KK8"/>
+                            <constraint firstAttribute="bottom" secondItem="RhX-FF-J0t" secondAttribute="bottom" id="tGr-dT-toC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="フォルダ" id="PEz-Hy-UKi"/>
+                    <connections>
+                        <outlet property="tableView" destination="RhX-FF-J0t" id="W9S-br-JQu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ee-Nw-hqs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2701" y="-50"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="PtN-BS-hiL">
+            <size key="intrinsicContentSize" width="40" height="108"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_addFolder" width="40" height="40"/>
+        <image name="ic_dismiss" width="24" height="24"/>
+        <namedColor name="Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Highlight">
+            <color red="0.80000000000000004" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SegmentedColor">
+            <color red="0.74509803921568629" green="0.85098039215686272" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

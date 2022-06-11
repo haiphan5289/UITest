@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  GooDic
+
+  Created by ttvu on 5/11/21.
+  Copyright © 2021 paxcreation. All rights reserved.
+*/
+
+"NSUserTrackingUsageDescription" = "「許可」を選択すると、あなたに無関係な広告が表示されにくくなります（設定画面からいつでも変更できます）。なお、本アプリで広告が表示されるのは、辞書検索画面のみです。";

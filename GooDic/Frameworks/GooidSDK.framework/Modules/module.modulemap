@@ -1,0 +1,11 @@
+framework module GooidSDK {
+  umbrella header "GooidSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module GooidSDK.Swift {
+    header "GooidSDK-Swift.h"
+    requires objc
+}

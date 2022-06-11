@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ヒラギノ角ゴシック W4.ttc">
+            <string>HiraginoSans-W4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="KGk-i7-Jjw" customClass="MenuTableViewCell" customModule="GooDic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RfD-4a-cxe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMO-Tg-kbU">
+                                <rect key="frame" x="54" y="10" width="224" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="O4O-xN-Fji"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="15"/>
+                                <color key="textColor" name="TextPrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_menu_cell" translatesAutoresizingMaskIntoConstraints="NO" id="a5Y-7j-C1U">
+                                <rect key="frame" x="288" y="19.5" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="JwZ-9P-26U"/>
+                                    <constraint firstAttribute="height" constant="24" id="cgN-vq-7FO"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7As-iQ-t1G">
+                                <rect key="frame" x="20" y="19.5" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Xmo-ug-Grl"/>
+                                    <constraint firstAttribute="width" constant="24" id="wFc-rm-gAt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="a5Y-7j-C1U" secondAttribute="trailing" constant="8" id="4Sv-3M-I1X"/>
+                            <constraint firstItem="a5Y-7j-C1U" firstAttribute="centerY" secondItem="7As-iQ-t1G" secondAttribute="centerY" id="7E5-Db-6j8"/>
+                            <constraint firstItem="7As-iQ-t1G" firstAttribute="centerY" secondItem="RfD-4a-cxe" secondAttribute="centerY" id="Fb3-Ec-K8T"/>
+                            <constraint firstItem="zMO-Tg-kbU" firstAttribute="leading" secondItem="7As-iQ-t1G" secondAttribute="trailing" constant="10" id="Gq9-09-0Or"/>
+                            <constraint firstItem="7As-iQ-t1G" firstAttribute="leading" secondItem="RfD-4a-cxe" secondAttribute="leading" constant="20" id="Zfq-Sg-yDd"/>
+                            <constraint firstItem="zMO-Tg-kbU" firstAttribute="centerY" secondItem="7As-iQ-t1G" secondAttribute="centerY" id="aZx-fX-ox5"/>
+                            <constraint firstItem="zMO-Tg-kbU" firstAttribute="top" secondItem="RfD-4a-cxe" secondAttribute="top" constant="10" id="mlq-a8-eQi"/>
+                            <constraint firstAttribute="bottom" secondItem="zMO-Tg-kbU" secondAttribute="bottom" constant="10" id="n2k-e9-u3R"/>
+                            <constraint firstItem="a5Y-7j-C1U" firstAttribute="leading" secondItem="zMO-Tg-kbU" secondAttribute="trailing" constant="10" id="pmC-uL-rPv"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDh-mC-x6B">
+                        <rect key="frame" x="0.0" y="62" width="320" height="1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="WG8-OY-QOq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="AccountBg"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gDh-mC-x6B" secondAttribute="trailing" id="2Zq-5w-gPq"/>
+                    <constraint firstAttribute="bottom" secondItem="RfD-4a-cxe" secondAttribute="bottom" id="7Zn-6B-DQa"/>
+                    <constraint firstItem="RfD-4a-cxe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="B7o-Gn-XL5"/>
+                    <constraint firstItem="RfD-4a-cxe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VDZ-qN-ckj"/>
+                    <constraint firstAttribute="bottom" secondItem="gDh-mC-x6B" secondAttribute="bottom" id="esX-UE-pvS"/>
+                    <constraint firstAttribute="trailing" secondItem="RfD-4a-cxe" secondAttribute="trailing" id="y0J-7K-e6C"/>
+                    <constraint firstItem="gDh-mC-x6B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zbd-rO-YB9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bottomPaddingConstraint" destination="7Zn-6B-DQa" id="Zuf-AL-uKM"/>
+                <outlet property="leftPaddingConstraint" destination="VDZ-qN-ckj" id="8Mf-XM-d6E"/>
+                <outlet property="leftPaddingImageViewConstraint" destination="Zfq-Sg-yDd" id="A41-sJ-nRt"/>
+                <outlet property="mainView" destination="RfD-4a-cxe" id="2gF-Tv-jaB"/>
+                <outlet property="minHeightTitle" destination="O4O-xN-Fji" id="v9X-qu-h46"/>
+                <outlet property="rightPaddingArrowConstraint" destination="4Sv-3M-I1X" id="3Vr-bi-rel"/>
+                <outlet property="rightPaddingConstraint" destination="y0J-7K-e6C" id="cVJ-qe-lf5"/>
+                <outlet property="stArrowImageView" destination="a5Y-7j-C1U" id="Wuq-p0-isZ"/>
+                <outlet property="stImageView" destination="7As-iQ-t1G" id="bk2-Gi-iaI"/>
+                <outlet property="stSeparatorView" destination="gDh-mC-x6B" id="BCr-Vd-010"/>
+                <outlet property="stTitle" destination="zMO-Tg-kbU" id="jH3-mz-4Ax"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="102.12053571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_arrow_menu_cell" width="24" height="24"/>
+        <namedColor name="AccountBg">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextPrimary">
+            <color red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

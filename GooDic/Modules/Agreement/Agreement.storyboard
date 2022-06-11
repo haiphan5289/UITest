@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--利用規約-->
+        <scene sceneID="jd3-ZA-vlz">
+            <objects>
+                <viewController storyboardIdentifier="AgreementViewController" id="2UT-zK-igY" customClass="AgreementViewController" customModule="GooDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7tX-QI-jVw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5X-ze-sQ8">
+                                <rect key="frame" x="0.0" y="88" width="414" height="662"/>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5FS-Z2-KmH">
+                                <rect key="frame" x="0.0" y="750" width="414" height="146"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyo-O7-okV" customClass="BorderButton" customModule="GooDic" customModuleProvider="target">
+                                        <rect key="frame" x="18" y="16" width="378" height="50"/>
+                                        <color key="backgroundColor" name="Separator"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="7tF-df-Xfp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                                        <state key="normal" title="規約に同意して利用を開始">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Jn-h0-UKt">
+                                        <rect key="frame" x="169.5" y="89" width="75" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="gmI-PY-IWo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                                        <state key="normal" title="同意しない">
+                                            <color key="titleColor" name="TextTertiary"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" id="8L3-cv-Ph3"/>
+                                    <constraint firstItem="Iyo-O7-okV" firstAttribute="top" secondItem="5FS-Z2-KmH" secondAttribute="top" constant="16" id="Fs2-iB-XuV"/>
+                                    <constraint firstItem="1Jn-h0-UKt" firstAttribute="centerX" secondItem="5FS-Z2-KmH" secondAttribute="centerX" id="ccT-v7-F4Y"/>
+                                    <constraint firstItem="1Jn-h0-UKt" firstAttribute="top" secondItem="Iyo-O7-okV" secondAttribute="bottom" constant="23" id="jx0-nl-gti"/>
+                                    <constraint firstItem="Iyo-O7-okV" firstAttribute="centerX" secondItem="5FS-Z2-KmH" secondAttribute="centerX" id="q3G-cL-cQV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m6w-kE-dXj"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="m6w-kE-dXj" firstAttribute="trailing" secondItem="n5X-ze-sQ8" secondAttribute="trailing" id="2QW-T1-68H"/>
+                            <constraint firstItem="n5X-ze-sQ8" firstAttribute="top" secondItem="m6w-kE-dXj" secondAttribute="top" id="AZp-u1-V87"/>
+                            <constraint firstItem="n5X-ze-sQ8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m6w-kE-dXj" secondAttribute="leading" id="DsB-4A-Mgh"/>
+                            <constraint firstItem="5FS-Z2-KmH" firstAttribute="leading" secondItem="7tX-QI-jVw" secondAttribute="leading" id="FWa-me-ieb"/>
+                            <constraint firstAttribute="trailing" secondItem="5FS-Z2-KmH" secondAttribute="trailing" id="G7O-fm-tS2"/>
+                            <constraint firstItem="5FS-Z2-KmH" firstAttribute="top" secondItem="n5X-ze-sQ8" secondAttribute="bottom" id="Qvq-Kv-npl"/>
+                            <constraint firstAttribute="bottom" secondItem="5FS-Z2-KmH" secondAttribute="bottom" id="V8b-it-gJ1"/>
+                            <constraint firstItem="n5X-ze-sQ8" firstAttribute="leading" secondItem="m6w-kE-dXj" secondAttribute="leading" id="ebO-Wq-FDB"/>
+                            <constraint firstItem="n5X-ze-sQ8" firstAttribute="centerX" secondItem="m6w-kE-dXj" secondAttribute="centerX" id="kCv-9Q-jeI"/>
+                            <constraint firstItem="n5X-ze-sQ8" firstAttribute="width" secondItem="7tX-QI-jVw" secondAttribute="height" multiplier="1:1" priority="250" id="sUN-CV-ilY"/>
+                            <constraint firstItem="n5X-ze-sQ8" firstAttribute="leading" relation="lessThanOrEqual" secondItem="m6w-kE-dXj" secondAttribute="leading" id="x6r-Gl-cuh">
+                                <variation key="heightClass=regular-widthClass=regular" constant="128"/>
+                            </constraint>
+                            <constraint firstItem="Iyo-O7-okV" firstAttribute="width" secondItem="n5X-ze-sQ8" secondAttribute="width" multiplier="0.99" constant="-32" id="yNc-5Z-6Vv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DsB-4A-Mgh"/>
+                                <exclude reference="kCv-9Q-jeI"/>
+                                <exclude reference="sUN-CV-ilY"/>
+                                <exclude reference="x6r-Gl-cuh"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="2QW-T1-68H"/>
+                                <include reference="DsB-4A-Mgh"/>
+                                <exclude reference="ebO-Wq-FDB"/>
+                                <include reference="kCv-9Q-jeI"/>
+                                <include reference="sUN-CV-ilY"/>
+                                <include reference="x6r-Gl-cuh"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="利用規約" id="JOY-XX-jdP"/>
+                    <connections>
+                        <outlet property="agreementButton" destination="Iyo-O7-okV" id="eBh-ka-Frt"/>
+                        <outlet property="bottomView" destination="5FS-Z2-KmH" id="HJT-ZJ-Ltt"/>
+                        <outlet property="disagreementButton" destination="1Jn-h0-UKt" id="ifO-H1-se8"/>
+                        <outlet property="webView" destination="n5X-ze-sQ8" id="7Ji-Jb-XhZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SjF-Wy-7x3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="95.758928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zBu-Zm-HC2">
+            <objects>
+                <navigationController storyboardIdentifier="AgreementNC" automaticallyAdjustsScrollViewInsets="NO" interfaceStyle="dark" id="kXP-aV-8cC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9AU-0w-9Sj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2UT-zK-igY" kind="relationship" relationship="rootViewController" id="jAf-dh-aEG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YPa-yZ-6zb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Iyo-O7-okV">
+            <size key="intrinsicContentSize" width="180" height="27"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="Separator">
+            <color red="0.80784313725490198" green="0.80784313725490198" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextTertiary">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

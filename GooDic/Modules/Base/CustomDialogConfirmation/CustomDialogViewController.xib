@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ヒラギノ角ゴシック W4.ttc">
+            <string>HiraginoSans-W4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomDialogViewController" customModule="GooDic" customModuleProvider="target">
+            <connections>
+                <outlet property="btLink" destination="cUR-fY-2YC" id="oxX-Ps-vqd"/>
+                <outlet property="btOk" destination="kuW-BY-eC2" id="Q0x-d3-llW"/>
+                <outlet property="lbSubTitle" destination="dCs-gC-H2c" id="MF1-Mx-48v"/>
+                <outlet property="lbTitle" destination="ZcB-NG-86T" id="e2S-Mz-7CG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6tg-ad-WCA" customClass="BorderView" customModule="GooDic" customModuleProvider="target">
+                    <rect key="frame" x="39.5" y="280.5" width="335" height="345"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KiT-d0-5c6">
+                            <rect key="frame" x="0.0" y="30" width="335" height="285"/>
+                            <subviews>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vgo-9E-Yov">
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="75"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_instep_dialog" translatesAutoresizingMaskIntoConstraints="NO" id="djL-Lu-ERU">
+                                            <rect key="frame" x="135" y="0.0" width="65" height="75"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="djL-Lu-ERU" firstAttribute="top" secondItem="Vgo-9E-Yov" secondAttribute="top" id="Axj-iB-vnf"/>
+                                        <constraint firstItem="djL-Lu-ERU" firstAttribute="centerX" secondItem="Vgo-9E-Yov" secondAttribute="centerX" id="Qfi-KY-9ym"/>
+                                        <constraint firstAttribute="bottom" secondItem="djL-Lu-ERU" secondAttribute="bottom" id="bNZ-05-Z2e"/>
+                                        <constraint firstItem="djL-Lu-ERU" firstAttribute="centerY" secondItem="Vgo-9E-Yov" secondAttribute="centerY" id="uAb-S9-MO0"/>
+                                    </constraints>
+                                </view>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZp-GL-KzM">
+                                    <rect key="frame" x="0.0" y="75" width="335" height="166"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CHZ-ur-gkB">
+                                            <rect key="frame" x="0.0" y="22" width="335" height="116"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZcB-NG-86T">
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="37"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment>
+                                                            <string key="content">新しい利用規約に同意の上、
+サービスをご利用ください。</string>
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="16" name="HiraginoSans-W6"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCs-gC-H2c">
+                                                    <rect key="frame" x="0.0" y="47" width="335" height="33"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment>
+                                                            <string key="content">続けるには利用規約をお読みの上、
+同意いただく必要があります。</string>
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="12" name="HiraginoSans-W4"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUR-fY-2YC">
+                                                    <rect key="frame" x="0.0" y="90" width="335" height="26"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="12"/>
+                                                    <state key="normal" title="変更内容を見る">
+                                                        <color key="titleColor" name="BlueHighlight"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="CHZ-ur-gkB" firstAttribute="leading" secondItem="ZZp-GL-KzM" secondAttribute="leading" id="3LM-sN-tZq"/>
+                                        <constraint firstAttribute="trailing" secondItem="CHZ-ur-gkB" secondAttribute="trailing" id="4th-RH-qaH"/>
+                                        <constraint firstAttribute="bottom" secondItem="CHZ-ur-gkB" secondAttribute="bottom" constant="28" id="NVV-CD-dLy"/>
+                                    </constraints>
+                                </view>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uaa-HA-2ez">
+                                    <rect key="frame" x="0.0" y="241" width="335" height="44"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuW-BY-eC2" customClass="BorderButton" customModule="GooDic" customModuleProvider="target">
+                                            <rect key="frame" x="25" y="0.0" width="285" height="44"/>
+                                            <color key="backgroundColor" name="Highlight"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="gZx-J4-tEJ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="15"/>
+                                            <state key="normal" title="閉じる">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="kuW-BY-eC2" firstAttribute="leading" secondItem="Uaa-HA-2ez" secondAttribute="leading" constant="25" id="HhD-Ze-W3d"/>
+                                        <constraint firstAttribute="bottom" secondItem="kuW-BY-eC2" secondAttribute="bottom" id="UVq-57-Gpu"/>
+                                        <constraint firstItem="kuW-BY-eC2" firstAttribute="centerY" secondItem="Uaa-HA-2ez" secondAttribute="centerY" id="Xv0-a1-Amj"/>
+                                        <constraint firstItem="kuW-BY-eC2" firstAttribute="top" secondItem="Uaa-HA-2ez" secondAttribute="top" id="dN7-po-QVc"/>
+                                        <constraint firstItem="kuW-BY-eC2" firstAttribute="centerX" secondItem="Uaa-HA-2ez" secondAttribute="centerX" id="jJT-mZ-eHS"/>
+                                        <constraint firstAttribute="trailing" secondItem="kuW-BY-eC2" secondAttribute="trailing" constant="25" id="mgQ-M5-3qV"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="FFFFFF&amp;464646"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="345" id="NLm-Ps-oFw"/>
+                        <constraint firstItem="KiT-d0-5c6" firstAttribute="top" secondItem="6tg-ad-WCA" secondAttribute="top" constant="30" id="OfP-rd-fCC"/>
+                        <constraint firstAttribute="width" constant="335" id="Vw0-jz-GJP"/>
+                        <constraint firstAttribute="trailing" secondItem="KiT-d0-5c6" secondAttribute="trailing" id="W04-z6-mWm"/>
+                        <constraint firstAttribute="bottom" secondItem="KiT-d0-5c6" secondAttribute="bottom" constant="30" id="ek9-4I-65z"/>
+                        <constraint firstItem="KiT-d0-5c6" firstAttribute="leading" secondItem="6tg-ad-WCA" secondAttribute="leading" id="uJK-Ch-saH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.063134517766497478" green="0.052036317246591877" blue="0.052868362318985937" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="6tg-ad-WCA" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="4eF-5y-fLx"/>
+                <constraint firstItem="6tg-ad-WCA" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="4iB-dJ-HqK"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="69.642857142857139"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="kuW-BY-eC2">
+            <size key="intrinsicContentSize" width="45" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_instep_dialog" width="65" height="75"/>
+        <namedColor name="BlueHighlight">
+            <color red="0.0" green="0.47450980392156861" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FFFFFF&amp;464646">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Highlight">
+            <color red="0.80000000000000004" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

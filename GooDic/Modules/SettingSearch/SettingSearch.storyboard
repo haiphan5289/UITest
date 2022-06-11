@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--検索オプション-->
+        <scene sceneID="OtX-Nz-VeV">
+            <objects>
+                <viewController storyboardIdentifier="SettingSearchViewController" id="NxP-Ni-eCD" customClass="SettingSearchViewController" customModule="GooDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aNv-Kd-Wka">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="XO7-Ks-7yK">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" name="FFFFFF&amp;464646"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9ab-pV-LDy"/>
+                        <color key="backgroundColor" name="FFFFFF&amp;464646"/>
+                        <constraints>
+                            <constraint firstItem="9ab-pV-LDy" firstAttribute="trailing" secondItem="XO7-Ks-7yK" secondAttribute="trailing" id="IIm-PS-OkH"/>
+                            <constraint firstItem="XO7-Ks-7yK" firstAttribute="leading" secondItem="aNv-Kd-Wka" secondAttribute="leading" id="lgf-9y-fGW"/>
+                            <constraint firstItem="9ab-pV-LDy" firstAttribute="bottom" secondItem="XO7-Ks-7yK" secondAttribute="bottom" id="vJL-WF-sOe"/>
+                            <constraint firstItem="XO7-Ks-7yK" firstAttribute="top" secondItem="9ab-pV-LDy" secondAttribute="top" id="xEg-U4-Mm6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="検索オプション" id="A2l-n9-3st">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="uIV-Jb-YMb">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pPQ-b1-rRy">
+                                <rect key="frame" x="20" y="10" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ic_dismiss"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btDismiss" destination="pPQ-b1-rRy" id="Rb1-mr-Orb"/>
+                        <outlet property="tableView" destination="XO7-Ks-7yK" id="QQq-ui-hMJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t1Y-tC-9YL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860.86956521739137" y="94.419642857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mk2-pV-gHx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="btk-7z-849" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lmf-Ch-ZGb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NxP-Ni-eCD" kind="relationship" relationship="rootViewController" id="gei-q9-B8t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQA-cp-Vqj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49.275362318840585" y="94.419642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_dismiss" width="24" height="24"/>
+        <namedColor name="FFFFFF&amp;464646">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

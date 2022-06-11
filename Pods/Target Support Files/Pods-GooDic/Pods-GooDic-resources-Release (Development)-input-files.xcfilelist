@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-GooDic/Pods-GooDic-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInAppMessaging/InAppMessagingDisplayResources.bundle
+${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle

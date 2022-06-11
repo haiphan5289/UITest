@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Suggestion View Controller-->
+        <scene sceneID="0Q4-8D-cAM">
+            <objects>
+                <viewController storyboardIdentifier="SuggestionViewController" interfaceStyle="dark" id="uIJ-VM-rQw" customClass="SuggestionViewController" customModule="GooDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AIp-JT-M5L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae7-dc-vuD">
+                                <rect key="frame" x="20" y="131" width="374" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="言い換え候補は ありません">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HiraginoSans-W4"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="always" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L9P-Ol-0a8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" name="ModelBackground"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="KKN-W4-3QL"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="4NZ-sH-hu8"/>
+                                <color key="separatorColor" name="ModelCellSeparator"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="delegate" destination="uIJ-VM-rQw" id="yU7-WE-nfw"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="juC-OA-5aj"/>
+                        <color key="backgroundColor" name="ModelBackground"/>
+                        <constraints>
+                            <constraint firstItem="juC-OA-5aj" firstAttribute="trailing" secondItem="L9P-Ol-0a8" secondAttribute="trailing" id="21I-aj-9Jp"/>
+                            <constraint firstItem="juC-OA-5aj" firstAttribute="trailing" secondItem="ae7-dc-vuD" secondAttribute="trailing" constant="20" id="Mxf-xj-1N5"/>
+                            <constraint firstItem="ae7-dc-vuD" firstAttribute="leading" secondItem="juC-OA-5aj" secondAttribute="leading" constant="20" id="bBb-Ku-BwL"/>
+                            <constraint firstItem="L9P-Ol-0a8" firstAttribute="leading" secondItem="juC-OA-5aj" secondAttribute="leading" id="bv1-Pc-rYL"/>
+                            <constraint firstItem="L9P-Ol-0a8" firstAttribute="top" secondItem="AIp-JT-M5L" secondAttribute="top" id="fbh-ES-qLZ"/>
+                            <constraint firstItem="ae7-dc-vuD" firstAttribute="centerY" secondItem="L9P-Ol-0a8" secondAttribute="centerY" id="hyM-it-6oY"/>
+                            <constraint firstItem="ae7-dc-vuD" firstAttribute="top" secondItem="juC-OA-5aj" secondAttribute="top" constant="43" id="kgP-2r-7im"/>
+                            <constraint firstAttribute="bottom" secondItem="L9P-Ol-0a8" secondAttribute="bottom" id="knH-gv-2bH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hyM-it-6oY"/>
+                                <exclude reference="kgP-2r-7im"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="hyM-it-6oY"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="kgP-2r-7im"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ka2-Zo-aUV">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic_dismiss" id="q43-jW-sM6">
+                            <color key="tintColor" name="TextPrimary"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="ic_feedback" id="xPP-QW-l0N">
+                            <color key="tintColor" name="TextPrimary"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dismissButton" destination="q43-jW-sM6" id="5ac-RH-jLK"/>
+                        <outlet property="emptyLabel" destination="ae7-dc-vuD" id="tfk-kB-2dJ"/>
+                        <outlet property="feedbackButton" destination="xPP-QW-l0N" id="d4S-79-pfl"/>
+                        <outlet property="tableView" destination="L9P-Ol-0a8" id="AKp-NA-R7n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gv0-80-uvI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2672" y="277"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L0Z-hw-R4V">
+            <objects>
+                <navigationController storyboardIdentifier="SuggestionNV" automaticallyAdjustsScrollViewInsets="NO" id="plP-ae-vaj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QvD-2t-eCy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uIJ-VM-rQw" kind="relationship" relationship="rootViewController" id="pSZ-hi-liO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Asl-o3-jrp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1872" y="277"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_dismiss" width="24" height="24"/>
+        <image name="ic_feedback" width="32" height="32"/>
+        <namedColor name="ModelBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ModelCellSeparator">
+            <color red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextPrimary">
+            <color red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

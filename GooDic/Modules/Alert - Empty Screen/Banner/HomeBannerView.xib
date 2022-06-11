@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ヒラギノ角ゴシック W4.ttc">
+            <string>HiraginoSans-W4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeBannerView" customModule="GooDic" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="cjN-vL-gFp" id="QsR-AB-20u"/>
+                <outlet property="closeButton" destination="OTw-dd-JBt" id="hXK-j4-GSw"/>
+                <outlet property="infoButton" destination="r3s-xl-Dcy" id="Wd9-jT-25u"/>
+                <outlet property="titleLabel" destination="IMB-1e-a8l" id="fd4-yV-DLU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Bmn-dz-rhi">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="利用規約が改定されます。yyyy年mm月dd日までにご確認ください。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMB-1e-a8l">
+                    <rect key="frame" x="48" y="14" width="248" height="28"/>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTw-dd-JBt">
+                    <rect key="frame" x="304" y="16" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="OTw-dd-JBt" secondAttribute="height" multiplier="1:1" id="Ya8-5X-2Iv"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="ic_close_white">
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3s-xl-Dcy">
+                    <rect key="frame" x="16" y="16" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="r3s-xl-Dcy" secondAttribute="height" multiplier="1:1" id="Uiz-A8-QUg"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="ic_info"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjN-vL-gFp">
+                    <rect key="frame" x="0.0" y="0.0" width="296" height="56"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="tJw-wG-Hll"/>
+            <color key="backgroundColor" name="BlueBanner"/>
+            <constraints>
+                <constraint firstItem="tJw-wG-Hll" firstAttribute="bottom" secondItem="r3s-xl-Dcy" secondAttribute="bottom" constant="16" id="7Rz-3q-7N5"/>
+                <constraint firstItem="tJw-wG-Hll" firstAttribute="bottom" secondItem="OTw-dd-JBt" secondAttribute="bottom" constant="16" id="9jd-tF-NLB"/>
+                <constraint firstItem="cjN-vL-gFp" firstAttribute="top" secondItem="Bmn-dz-rhi" secondAttribute="top" id="BaZ-u4-wqn"/>
+                <constraint firstItem="tJw-wG-Hll" firstAttribute="bottom" secondItem="cjN-vL-gFp" secondAttribute="bottom" id="G88-1M-Uyx"/>
+                <constraint firstItem="cjN-vL-gFp" firstAttribute="leading" secondItem="Bmn-dz-rhi" secondAttribute="leading" id="IO8-3R-aqp"/>
+                <constraint firstItem="r3s-xl-Dcy" firstAttribute="leading" secondItem="tJw-wG-Hll" secondAttribute="leading" constant="16" id="JWr-2u-snl"/>
+                <constraint firstItem="OTw-dd-JBt" firstAttribute="leading" secondItem="cjN-vL-gFp" secondAttribute="trailing" constant="8" symbolic="YES" id="JfX-Wy-6Hh"/>
+                <constraint firstItem="IMB-1e-a8l" firstAttribute="leading" secondItem="r3s-xl-Dcy" secondAttribute="trailing" constant="8" id="Pr8-Az-2Ng"/>
+                <constraint firstItem="IMB-1e-a8l" firstAttribute="centerY" secondItem="Bmn-dz-rhi" secondAttribute="centerY" id="YfX-S1-DjW"/>
+                <constraint firstItem="r3s-xl-Dcy" firstAttribute="top" secondItem="Bmn-dz-rhi" secondAttribute="top" constant="16" id="e7f-2X-vfc"/>
+                <constraint firstItem="OTw-dd-JBt" firstAttribute="leading" secondItem="IMB-1e-a8l" secondAttribute="trailing" constant="8" id="kvI-T0-edW"/>
+                <constraint firstItem="tJw-wG-Hll" firstAttribute="trailing" secondItem="OTw-dd-JBt" secondAttribute="trailing" constant="16" id="ogA-zf-6u7"/>
+                <constraint firstItem="OTw-dd-JBt" firstAttribute="top" secondItem="Bmn-dz-rhi" secondAttribute="top" constant="16" id="zto-bi-mfX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="57.971014492753625" y="89.732142857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_close_white" width="24" height="24"/>
+        <image name="ic_info" width="24" height="24"/>
+        <namedColor name="BlueBanner">
+            <color red="0.098039215686274508" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

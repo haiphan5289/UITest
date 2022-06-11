@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mtn-BY-HI8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeViewController-->
+        <scene sceneID="XsK-7o-Z2x">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="HomeViewController" id="OaN-yj-hL2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="W6P-bv-qkv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="114-t9-eLY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1892" y="-394"/>
+        </scene>
+        <!--フォルダ-->
+        <scene sceneID="Z3k-lr-TPo">
+            <objects>
+                <navigationController id="fNg-A8-hdx" customClass="BaseNavigationController" customModule="GooDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="フォルダ" image="ic_tab_folder" selectedImage="ic_tab_selectedFolder" id="n3M-M3-MUa">
+                        <color key="badgeColor" name="TabBarHighlight"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="m1I-VJ-mcT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="TextPrimary"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kk5-BU-aJS" kind="relationship" relationship="rootViewController" id="1fB-En-U6u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hsb-hu-wv7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1122" y="251"/>
+        </scene>
+        <!--FolderBrowserViewController-->
+        <scene sceneID="McK-pQ-Si3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Folder" referencedIdentifier="FolderBrowserViewController" id="kk5-BU-aJS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ZmV-yF-mW4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ets-Id-01Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1885" y="250"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="HKe-j0-api">
+            <objects>
+                <tabBarController storyboardIdentifier="MainViewController" hidesBottomBarWhenPushed="YES" id="mtn-BY-HI8" customClass="MainViewController" customModule="GooDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="TabBarBg" id="Hjs-ma-RH3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="NaviBarBgRoot"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LFb-2E-puC" kind="relationship" relationship="viewControllers" id="BDT-8L-iqn"/>
+                        <segue destination="fNg-A8-hdx" kind="relationship" relationship="viewControllers" id="OxP-Be-waI"/>
+                        <segue destination="c6y-Pe-qFJ" kind="relationship" relationship="viewControllers" id="TxD-dt-7ur"/>
+                        <segue destination="ljZ-Ck-wEc" kind="relationship" relationship="viewControllers" id="3P2-YB-xJT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sq6-xh-H2z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="511"/>
+        </scene>
+        <!--下書き-->
+        <scene sceneID="RQB-iq-eJD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LFb-2E-puC" customClass="BaseNavigationController" customModule="GooDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="下書き" image="ic_tab_01A" selectedImage="ic_tab_01B" id="6WA-bA-cfQ">
+                        <color key="badgeColor" name="TabBarHighlight"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="iKf-dK-0hI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="TextPrimary"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OaN-yj-hL2" kind="relationship" relationship="rootViewController" id="VO5-Na-Ten"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7mx-Br-oRW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1122" y="-468"/>
+        </scene>
+        <!--辞書検索-->
+        <scene sceneID="wWj-3d-elq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c6y-Pe-qFJ" customClass="BaseNavigationController" customModule="GooDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="辞書検索" image="ic_tab_02A" selectedImage="ic_tab_02B" id="bpX-eP-w29">
+                        <color key="badgeColor" name="TabBarHighlight"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="zDP-I1-fVj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="TextPrimary"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Rnz-P7-SwF" kind="relationship" relationship="rootViewController" id="kFn-kx-Brw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0f-Wk-qOW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1122" y="952"/>
+        </scene>
+        <!--DictionaryViewController-->
+        <scene sceneID="VCk-eO-GlA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Dictionary" referencedIdentifier="DictionaryViewController" id="Rnz-P7-SwF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="52H-Pa-c6r"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEG-nI-Hve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888" y="952"/>
+        </scene>
+        <!--メニュー-->
+        <scene sceneID="e9G-Eo-psD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ljZ-Ck-wEc" customClass="BaseNavigationController" customModule="GooDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="メニュー" image="ic_tab_03A" selectedImage="ic_tab_03B" id="oJC-yT-BYh">
+                        <color key="badgeColor" name="TabBarHighlight"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="taF-d7-cDU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="TextPrimary"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JYE-It-V38" kind="relationship" relationship="rootViewController" id="xpW-8D-n1C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USg-wr-rAK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1122" y="1640"/>
+        </scene>
+        <!--MenuViewController-->
+        <scene sceneID="gyH-eT-SY8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Menu" referencedIdentifier="MenuViewController" id="JYE-It-V38" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1cU-9D-ON2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zoc-sW-iaF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1872" y="1639"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" name="Highlight"/>
+    <resources>
+        <image name="TabBarBg" width="25" height="25"/>
+        <image name="ic_tab_01A" width="24" height="24"/>
+        <image name="ic_tab_01B" width="24" height="24"/>
+        <image name="ic_tab_02A" width="24" height="24"/>
+        <image name="ic_tab_02B" width="24" height="24"/>
+        <image name="ic_tab_03A" width="24" height="24"/>
+        <image name="ic_tab_03B" width="24" height="24"/>
+        <image name="ic_tab_folder" width="24" height="24"/>
+        <image name="ic_tab_selectedFolder" width="24" height="24"/>
+        <namedColor name="Highlight">
+            <color red="0.80000000000000004" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="NaviBarBgRoot">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TabBarHighlight">
+            <color red="0.80000001192092896" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextPrimary">
+            <color red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

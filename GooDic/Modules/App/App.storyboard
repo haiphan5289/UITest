@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App View Controller-->
+        <scene sceneID="F3A-fc-fVN">
+            <objects>
+                <viewController storyboardIdentifier="AppViewController" id="Uoy-J7-tfo" customClass="AppViewController" customModule="GooDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kGS-S5-wtc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_splash_1" translatesAutoresizingMaskIntoConstraints="NO" id="kQl-Sp-FjF">
+                                <rect key="frame" x="27" y="308" width="360" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kQl-Sp-FjF" secondAttribute="height" multiplier="360:280" priority="750" id="5yt-J1-QG8"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="397" id="MFu-vp-n9P"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_splash_2" translatesAutoresizingMaskIntoConstraints="NO" id="1u9-Qf-Jqx">
+                                <rect key="frame" x="27" y="796" width="360" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="CJj-ji-zbv"/>
+                                    <constraint firstAttribute="width" constant="360" id="RXr-4D-36q"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nq1-EZ-QDa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kQl-Sp-FjF" firstAttribute="centerY" secondItem="kGS-S5-wtc" secondAttribute="centerY" id="AJt-vu-nmW"/>
+                            <constraint firstItem="kQl-Sp-FjF" firstAttribute="centerX" secondItem="kGS-S5-wtc" secondAttribute="centerX" id="PXE-Zv-Lil"/>
+                            <constraint firstItem="1u9-Qf-Jqx" firstAttribute="centerX" secondItem="kGS-S5-wtc" secondAttribute="centerX" id="Spb-Po-kwC"/>
+                            <constraint firstItem="kQl-Sp-FjF" firstAttribute="width" secondItem="kGS-S5-wtc" secondAttribute="width" multiplier="360:375" priority="750" id="XaF-ru-YV6"/>
+                            <constraint firstItem="nq1-EZ-QDa" firstAttribute="bottom" secondItem="1u9-Qf-Jqx" secondAttribute="bottom" id="iRf-PD-MZX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="XaF-ru-YV6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2p-ta-Mgu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_splash_1" width="360" height="280"/>
+        <image name="img_splash_2" width="360" height="66"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

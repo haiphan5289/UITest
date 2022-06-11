@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--並び替え-->
+        <scene sceneID="DLg-4I-0vO">
+            <objects>
+                <viewController storyboardIdentifier="SortVC" id="kOy-WC-bfx" customClass="SortVC" customModule="GooDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FzS-ge-gk1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="aCE-GO-lCa">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" name="FFFFFF&amp;464646"/>
+                                <color key="separatorColor" name="ModelCellSeparator"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hpc-El-7x6"/>
+                        <color key="backgroundColor" name="FFFFFF&amp;464646"/>
+                        <constraints>
+                            <constraint firstItem="aCE-GO-lCa" firstAttribute="leading" secondItem="hpc-El-7x6" secondAttribute="leading" id="Yew-nJ-5m2"/>
+                            <constraint firstAttribute="bottom" secondItem="aCE-GO-lCa" secondAttribute="bottom" id="d5F-gK-Z6H"/>
+                            <constraint firstItem="aCE-GO-lCa" firstAttribute="top" secondItem="hpc-El-7x6" secondAttribute="top" id="qUB-dT-9MJ"/>
+                            <constraint firstAttribute="trailing" secondItem="aCE-GO-lCa" secondAttribute="trailing" id="xRG-OX-JHr"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="並び替え" id="4HZ-vT-4Th">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic_dismiss" id="OYm-jc-z3K">
+                            <color key="tintColor" name="TextPrimary"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="btDismiss" destination="OYm-jc-z3K" id="yet-gJ-rXB"/>
+                        <outlet property="tableView" destination="aCE-GO-lCa" id="eW4-Ip-Lfc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQ6-uU-V7S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2224.6376811594205" y="96.428571428571431"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="YjK-Hn-fMi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NV8-kl-smH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="J1v-f4-hmg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IdB-pP-0Wd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kOy-WC-bfx" kind="relationship" relationship="rootViewController" id="tgL-dO-Gfa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LQD-8i-IIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1314.4927536231885" y="96.428571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_dismiss" width="24" height="24"/>
+        <namedColor name="FFFFFF&amp;464646">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ModelCellSeparator">
+            <color red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextPrimary">
+            <color red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

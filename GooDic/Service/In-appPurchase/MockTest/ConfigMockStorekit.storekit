@@ -1,0 +1,71 @@
+{
+  "identifier" : "314F35A1",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "41DA8EAF",
+      "localizations" : [
+
+      ],
+      "name" : "premium",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "0.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "2EE859A3",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "jp.ne.goo.dict.pro.subscription.plan1",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "subscription plan 1",
+          "subscriptionGroupID" : "41DA8EAF",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "0.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "AA4CA5EE",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "jp.ne.goo.dict.staging.subscription.plan1",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "stg subscription plan 1",
+          "subscriptionGroupID" : "41DA8EAF",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 1
+  }
+}

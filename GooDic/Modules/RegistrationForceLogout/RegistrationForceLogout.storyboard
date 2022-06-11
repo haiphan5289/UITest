@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Registration Logout View Controller-->
+        <scene sceneID="oQk-KE-Rd5">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationLogoutViewController" id="Pyr-Wt-dm0" customClass="RegistrationLogoutViewController" customModule="GooDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MaJ-9n-Xm2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CR7-yh-8AY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uFE-5h-Klb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="494"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_ForceLogout" translatesAutoresizingMaskIntoConstraints="NO" id="1Ur-xX-qzf">
+                                                <rect key="frame" x="38" y="50" width="338" height="194"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Background"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="1Ur-xX-qzf" secondAttribute="bottom" priority="250" constant="250" id="2lg-Pz-5ac"/>
+                                            <constraint firstItem="1Ur-xX-qzf" firstAttribute="top" secondItem="uFE-5h-Klb" secondAttribute="top" constant="50" id="BpK-zf-ysX"/>
+                                            <constraint firstItem="1Ur-xX-qzf" firstAttribute="leading" secondItem="uFE-5h-Klb" secondAttribute="leading" constant="38" id="Sfb-NF-4Bk"/>
+                                            <constraint firstAttribute="trailing" secondItem="1Ur-xX-qzf" secondAttribute="trailing" constant="38" id="fa1-ci-cH3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uFE-5h-Klb" secondAttribute="trailing" id="cdA-Zx-mQc"/>
+                                    <constraint firstItem="uFE-5h-Klb" firstAttribute="top" secondItem="CR7-yh-8AY" secondAttribute="top" id="fgv-L8-IVA"/>
+                                    <constraint firstItem="uFE-5h-Klb" firstAttribute="leading" secondItem="CR7-yh-8AY" secondAttribute="leading" id="rCa-pq-OFI"/>
+                                    <constraint firstItem="uFE-5h-Klb" firstAttribute="centerX" secondItem="CR7-yh-8AY" secondAttribute="centerX" id="rH8-mm-ApA"/>
+                                    <constraint firstAttribute="bottom" secondItem="uFE-5h-Klb" secondAttribute="bottom" id="rjG-1a-Cwk"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="TsC-8S-buK"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="fH5-MQ-pao"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MHY-dc-b4l"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="CR7-yh-8AY" firstAttribute="trailing" secondItem="MHY-dc-b4l" secondAttribute="trailing" id="2KV-Rs-qUS"/>
+                            <constraint firstItem="CR7-yh-8AY" firstAttribute="top" secondItem="MHY-dc-b4l" secondAttribute="top" id="5WN-lF-Nzy"/>
+                            <constraint firstItem="CR7-yh-8AY" firstAttribute="bottom" secondItem="MHY-dc-b4l" secondAttribute="bottom" id="CbT-hv-eb8"/>
+                            <constraint firstItem="CR7-yh-8AY" firstAttribute="leading" secondItem="MHY-dc-b4l" secondAttribute="leading" id="yL6-Od-bPR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgLogOut" destination="1Ur-xX-qzf" id="gUk-Dd-FiB"/>
+                        <outlet property="leftViewContent" destination="rCa-pq-OFI" id="RBZ-ID-R6y"/>
+                        <outlet property="rightViewContent" destination="cdA-Zx-mQc" id="jOe-4L-8hD"/>
+                        <outlet property="vContent" destination="uFE-5h-Klb" id="uHj-oX-9qg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RRw-bO-y9h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="327.536231884058" y="99.456521739130437"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_ForceLogout" width="299" height="194"/>
+        <namedColor name="Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

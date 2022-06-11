@@ -1,0 +1,57 @@
+[
+    {
+        "id": 0,
+        "titleFontName": "HiraginoSans-W4",
+        "titleFontSize": 13,
+        "titleLineHeight": 26,
+        "titleKern": 0,
+        "contentFontName": "HiraginoSans-W4",
+        "contentFontSize": 11,
+        "contentLineHeight": 18.7,
+        "contentKern": 0
+    },
+    {
+        "id": 1,
+        "titleFontName": "HiraginoSans-W4",
+        "titleFontSize": 15,
+        "titleLineHeight": 26,
+        "titleKern": 0,
+        "contentFontName": "HiraginoSans-W4",
+        "contentFontSize": 13,
+        "contentLineHeight": 22.1,
+        "contentKern": 0
+    },
+    {
+        "id": 2,
+        "titleFontName": "HiraginoSans-W4",
+        "titleFontSize": 17,
+        "titleLineHeight": 26,
+        "titleKern": 0,
+        "contentFontName": "HiraginoSans-W4",
+        "contentFontSize": 14,
+        "contentLineHeight": 23.8,
+        "contentKern": 0
+    },
+    {
+        "id": 3,
+        "titleFontName": "HiraginoSans-W4",
+        "titleFontSize": 18,
+        "titleLineHeight": 26,
+        "titleKern": 0,
+        "contentFontName": "HiraginoSans-W4",
+        "contentFontSize": 15,
+        "contentLineHeight": 25.5,
+        "contentKern": 0
+    },
+    {
+        "id": 4,
+        "titleFontName": "HiraginoSans-W4",
+        "titleFontSize": 19,
+        "titleLineHeight": 26,
+        "titleKern": 0,
+        "contentFontName": "HiraginoSans-W4",
+        "contentFontSize": 17,
+        "contentLineHeight": 28.9,
+        "contentKern": 0
+    }
+]

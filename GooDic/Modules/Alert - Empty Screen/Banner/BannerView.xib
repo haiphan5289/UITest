@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ヒラギノ角ゴシック W4.ttc">
+            <string>HiraginoSans-W4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BannerView" customModule="GooDic" customModuleProvider="target">
+            <connections>
+                <outlet property="messageLabel" destination="0XA-qd-U6P" id="SYR-uC-ipm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="クラウドでは文章が自動保存されません。 手動で保存してください。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XA-qd-U6P">
+                    <rect key="frame" x="16" y="14" width="348" height="33"/>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="13"/>
+                    <color key="textColor" name="BannerText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbN-U9-Z0E">
+                    <rect key="frame" x="374" y="18" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="HYO-OV-dnN"/>
+                        <constraint firstAttribute="height" constant="24" id="OYg-3H-PVw"/>
+                    </constraints>
+                    <state key="normal" image="ic_close"/>
+                    <connections>
+                        <action selector="close:" destination="-1" eventType="touchUpInside" id="YRg-Y9-13Z"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="BannerBg"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0XA-qd-U6P" secondAttribute="bottom" constant="13" id="650-eE-a6p"/>
+                <constraint firstItem="0XA-qd-U6P" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="P96-Uq-DyY"/>
+                <constraint firstItem="0XA-qd-U6P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="R9z-Qb-uQR"/>
+                <constraint firstItem="QbN-U9-Z0E" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="WgB-n5-5rh"/>
+                <constraint firstAttribute="trailing" secondItem="QbN-U9-Z0E" secondAttribute="trailing" constant="16" id="a1C-UN-GiU"/>
+                <constraint firstItem="QbN-U9-Z0E" firstAttribute="leading" secondItem="0XA-qd-U6P" secondAttribute="trailing" constant="10" id="gpF-hU-ovi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="34.782608695652179" y="-216.29464285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_close" width="24" height="24"/>
+        <namedColor name="BannerBg">
+            <color red="0.96470588235294119" green="0.92549019607843142" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BannerText">
+            <color red="0.80000000000000004" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

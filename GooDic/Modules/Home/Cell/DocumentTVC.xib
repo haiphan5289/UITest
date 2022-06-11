@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ヒラギノ角ゴシック W4.ttc">
+            <string>HiraginoSans-W4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="DocumentTVC" customModule="GooDic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新型コロナウイルスの感染拡大が続く中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8A9-eF-bTY" userLabel="content">
+                        <rect key="frame" x="20" y="39" width="284" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="weX-gz-uuv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="14"/>
+                        <color key="textColor" name="TextPrimary"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="テレワーク中綺麗に家保つコツ1行以上" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltx-uj-E9M" userLabel="title">
+                        <rect key="frame" x="20" y="15" width="284" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="bDj-u1-N9i"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                        <color key="textColor" name="NoData"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ChM-5Z-Sbh">
+                        <rect key="frame" x="95" y="58.5" width="209" height="22"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_localFolder" translatesAutoresizingMaskIntoConstraints="NO" id="gL9-23-klk">
+                                <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gL9-23-klk" secondAttribute="height" multiplier="1:1" id="IxJ-ow-9Gh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ドラえもん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2r-Eu-MJd">
+                                <rect key="frame" x="24" y="0.0" width="185" height="22"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="13"/>
+                                <color key="textColor" name="NoData"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="c2r-Eu-MJd" secondAttribute="trailing" id="AVq-eI-qmn"/>
+                            <constraint firstAttribute="height" constant="22" id="Nbz-IE-boA"/>
+                            <constraint firstItem="gL9-23-klk" firstAttribute="leading" secondItem="ChM-5Z-Sbh" secondAttribute="leading" id="YWI-Lp-kuc"/>
+                            <constraint firstAttribute="bottom" secondItem="gL9-23-klk" secondAttribute="bottom" id="loD-E8-ard"/>
+                            <constraint firstItem="c2r-Eu-MJd" firstAttribute="top" secondItem="ChM-5Z-Sbh" secondAttribute="top" id="o7j-by-aLr"/>
+                            <constraint firstItem="gL9-23-klk" firstAttribute="top" secondItem="ChM-5Z-Sbh" secondAttribute="top" id="rGe-13-iKq"/>
+                            <constraint firstAttribute="bottom" secondItem="c2r-Eu-MJd" secondAttribute="bottom" id="tmU-9r-M2n"/>
+                            <constraint firstItem="c2r-Eu-MJd" firstAttribute="leading" secondItem="gL9-23-klk" secondAttribute="trailing" constant="2" id="zZ4-hD-oIn"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020.05.07" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k42-Ie-zHr" userLabel="date">
+                        <rect key="frame" x="20" y="64" width="65" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="Kdp-UA-bLi"/>
+                            <constraint firstAttribute="width" constant="65" id="VS7-LN-zqt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="11"/>
+                        <color key="textColor" name="TextTertiary"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8A9-eF-bTY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="0ix-j2-Akh"/>
+                    <constraint firstItem="8A9-eF-bTY" firstAttribute="top" secondItem="ltx-uj-E9M" secondAttribute="bottom" constant="6" id="2mX-gc-92J"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ltx-uj-E9M" secondAttribute="trailing" id="8L8-15-cQ5"/>
+                    <constraint firstItem="ChM-5Z-Sbh" firstAttribute="leading" secondItem="k42-Ie-zHr" secondAttribute="trailing" constant="10" id="CG2-9c-Ayk"/>
+                    <constraint firstItem="ChM-5Z-Sbh" firstAttribute="centerY" secondItem="k42-Ie-zHr" secondAttribute="centerY" id="EQf-UK-Mly"/>
+                    <constraint firstItem="k42-Ie-zHr" firstAttribute="left" secondItem="H2p-sc-9uM" secondAttribute="left" constant="20" id="GTB-ks-8jG"/>
+                    <constraint firstAttribute="trailing" secondItem="ChM-5Z-Sbh" secondAttribute="trailing" constant="16" id="Htb-Ed-i0S"/>
+                    <constraint firstItem="ltx-uj-E9M" firstAttribute="left" secondItem="H2p-sc-9uM" secondAttribute="left" constant="20" id="LKo-5M-kMG"/>
+                    <constraint firstAttribute="rightMargin" secondItem="8A9-eF-bTY" secondAttribute="right" id="ZtY-jO-ms8"/>
+                    <constraint firstItem="k42-Ie-zHr" firstAttribute="top" secondItem="8A9-eF-bTY" secondAttribute="bottom" constant="9" id="b8O-XL-qMJ"/>
+                    <constraint firstItem="ltx-uj-E9M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="kW4-OF-IBW"/>
+                    <constraint firstAttribute="bottom" secondItem="k42-Ie-zHr" secondAttribute="bottom" constant="15" id="yBF-ZO-MOg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="Background"/>
+            <color key="tintColor" name="Highlight"/>
+            <connections>
+                <outlet property="contentLabel" destination="8A9-eF-bTY" id="3sd-gC-lpF"/>
+                <outlet property="dateLabel" destination="k42-Ie-zHr" id="OH8-k8-14x"/>
+                <outlet property="folderIcon" destination="gL9-23-klk" id="tqx-jB-GVp"/>
+                <outlet property="folderNameLabel" destination="c2r-Eu-MJd" id="6lB-4i-fpU"/>
+                <outlet property="folderPlaceholder" destination="ChM-5Z-Sbh" id="vyB-jz-70R"/>
+                <outlet property="titleLabel" destination="ltx-uj-E9M" id="oND-jU-dHh"/>
+            </connections>
+            <point key="canvasLocation" x="314.49275362318843" y="81.696428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_localFolder" width="32" height="32"/>
+        <namedColor name="Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Highlight">
+            <color red="0.80000000000000004" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="NoData">
+            <color red="0.47450980392156861" green="0.47450980392156861" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextPrimary">
+            <color red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextTertiary">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

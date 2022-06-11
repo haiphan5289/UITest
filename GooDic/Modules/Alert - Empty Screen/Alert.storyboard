@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Error Device Registration View Controller-->
+        <scene sceneID="0kx-6j-EKW">
+            <objects>
+                <viewController storyboardIdentifier="ErrorDeviceRegistrationViewController" interfaceStyle="dark" id="kuW-tA-bUW" customClass="ErrorDeviceRegistrationViewController" customModule="GooDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="und-oK-bG6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Laz-mz-nRi">
+                                <rect key="frame" x="26" y="64" width="362" height="49.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="クラウドを利用するには  端末登録が必要です。">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="HiraginoSans-W4"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="12" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GME-IT-Qlt" customClass="BorderButton" customModule="GooDic" customModuleProvider="target">
+                                <rect key="frame" x="26" y="143.5" width="362" height="50"/>
+                                <color key="backgroundColor" name="TextHighlightRevert"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Qnm-Kj-ZNN"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" priority="750" constant="362" id="WlO-uL-Nbq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                                <state key="normal" title="端末を登録する">
+                                    <color key="titleColor" name="TextHighlight"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="Highlight"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mGQ-K6-TuJ"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="GME-IT-Qlt" firstAttribute="centerX" secondItem="und-oK-bG6" secondAttribute="centerX" id="6Nd-XK-1eL"/>
+                            <constraint firstItem="GME-IT-Qlt" firstAttribute="leading" secondItem="mGQ-K6-TuJ" secondAttribute="leading" priority="750" constant="26" id="9bl-qa-fG5"/>
+                            <constraint firstItem="mGQ-K6-TuJ" firstAttribute="trailing" secondItem="Laz-mz-nRi" secondAttribute="trailing" constant="26" id="CuU-p4-8pS"/>
+                            <constraint firstItem="mGQ-K6-TuJ" firstAttribute="trailing" secondItem="GME-IT-Qlt" secondAttribute="trailing" priority="750" constant="26" id="QLC-I7-7WO"/>
+                            <constraint firstItem="Laz-mz-nRi" firstAttribute="leading" secondItem="mGQ-K6-TuJ" secondAttribute="leading" constant="26" id="V33-3S-DyP"/>
+                            <constraint firstItem="Laz-mz-nRi" firstAttribute="top" secondItem="mGQ-K6-TuJ" secondAttribute="top" constant="20" id="Zkl-aM-QIu"/>
+                            <constraint firstItem="GME-IT-Qlt" firstAttribute="top" secondItem="Laz-mz-nRi" secondAttribute="bottom" constant="30" id="bz6-X2-yDU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="Laz-mz-nRi" id="jJT-hW-qzB"/>
+                        <outlet property="paddingTop" destination="Zkl-aM-QIu" id="11g-zv-D5u"/>
+                        <outlet property="registerButton" destination="GME-IT-Qlt" id="eTt-dS-Jog"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yni-uQ-VSD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1128" y="86"/>
+        </scene>
+        <!--Cloud Error View Controller-->
+        <scene sceneID="bzm-FE-oyQ">
+            <objects>
+                <viewController storyboardIdentifier="CloudErrorViewController" interfaceStyle="dark" id="ExG-gM-Hk8" customClass="CloudErrorViewController" customModule="GooDic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WQY-Fy-UK8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通信エラー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqu-No-h4M">
+                                <rect key="frame" x="26" y="64" width="362" height="16"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h09-uj-7aM">
+                                <rect key="frame" x="26" y="100" width="362" height="45"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">通信状況を確認するか、
+しばらく経ってから再度お試しください。</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HiraginoSans-W4"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="12" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhi-w1-PJS" customClass="BorderButton" customModule="GooDic" customModuleProvider="target">
+                                <rect key="frame" x="26" y="175" width="362" height="50"/>
+                                <color key="backgroundColor" name="TextHighlightRevert"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Vuk-Am-qYT"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="362" id="yGT-eN-7pe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                <state key="normal" title="更新する">
+                                    <color key="titleColor" name="TextHighlight"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="Highlight"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b9b-te-pLh"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="h09-uj-7aM" firstAttribute="top" secondItem="Xqu-No-h4M" secondAttribute="bottom" constant="20" id="3J8-aX-VPW"/>
+                            <constraint firstItem="b9b-te-pLh" firstAttribute="trailing" secondItem="h09-uj-7aM" secondAttribute="trailing" constant="26" id="5e2-wb-VAQ"/>
+                            <constraint firstItem="Qhi-w1-PJS" firstAttribute="leading" secondItem="b9b-te-pLh" secondAttribute="leading" priority="750" constant="26" id="AtM-hY-vsv"/>
+                            <constraint firstItem="Qhi-w1-PJS" firstAttribute="centerX" secondItem="WQY-Fy-UK8" secondAttribute="centerX" id="OfM-mL-TMJ"/>
+                            <constraint firstItem="b9b-te-pLh" firstAttribute="trailing" secondItem="Qhi-w1-PJS" secondAttribute="trailing" priority="750" constant="26" id="Rr8-Ub-YEg"/>
+                            <constraint firstItem="b9b-te-pLh" firstAttribute="trailing" secondItem="Xqu-No-h4M" secondAttribute="trailing" constant="26" id="ctJ-Pz-alT"/>
+                            <constraint firstItem="Qhi-w1-PJS" firstAttribute="top" secondItem="h09-uj-7aM" secondAttribute="bottom" constant="30" id="kWr-iI-JdM"/>
+                            <constraint firstItem="h09-uj-7aM" firstAttribute="leading" secondItem="b9b-te-pLh" secondAttribute="leading" constant="26" id="mYW-OB-FbP"/>
+                            <constraint firstItem="Xqu-No-h4M" firstAttribute="leading" secondItem="b9b-te-pLh" secondAttribute="leading" constant="26" id="nVd-Pd-eLG"/>
+                            <constraint firstItem="Xqu-No-h4M" firstAttribute="top" secondItem="b9b-te-pLh" secondAttribute="top" constant="20" id="y9c-Re-nhn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="refreshButton" destination="Qhi-w1-PJS" id="Gla-VA-A05"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ezQ-ku-pqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2145" y="86"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="GME-IT-Qlt">
+            <size key="intrinsicContentSize" width="105" height="27"/>
+        </designable>
+        <designable name="Qhi-w1-PJS">
+            <size key="intrinsicContentSize" width="64" height="28"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Highlight">
+            <color red="0.80000000000000004" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextHighlight">
+            <color red="0.80000000000000004" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextHighlightRevert">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

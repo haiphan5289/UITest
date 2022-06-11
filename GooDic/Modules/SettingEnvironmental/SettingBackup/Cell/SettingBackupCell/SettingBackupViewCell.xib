@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ヒラギノ角ゴシック W4.ttc">
+            <string>HiraginoSans-W4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingBackupViewCell" rowHeight="81" id="KGk-i7-Jjw" customClass="SettingBackupViewCell" customModule="GooDic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywK-XU-zZ2">
+                        <rect key="frame" x="0.0" y="0.0" width="373" height="81"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jMh-eL-gpc" userLabel="lineBottomView">
+                                <rect key="frame" x="0.0" y="80" width="373" height="1"/>
+                                <color key="backgroundColor" name="E3E3E3&amp;666666"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="d69-Mr-PSO"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWV-Cy-aCK">
+                                <rect key="frame" x="20" y="18" width="43.5" height="16"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="16"/>
+                                <color key="textColor" name="111111&amp;FFFFFF"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0E5-4A-aya">
+                                <rect key="frame" x="20" y="52" width="333" height="14"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="14"/>
+                                <color key="textColor" name="666666&amp;CFCFCF"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="I39-pa-0vE">
+                                <rect key="frame" x="304" y="10.5" width="51" height="31"/>
+                                <color key="onTintColor" name="1979FF"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" name="FFFFFF&amp;121212"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jMh-eL-gpc" secondAttribute="trailing" id="2xT-VU-boM"/>
+                            <constraint firstItem="jMh-eL-gpc" firstAttribute="leading" secondItem="ywK-XU-zZ2" secondAttribute="leading" id="N7Q-Rb-Vgx"/>
+                            <constraint firstItem="0E5-4A-aya" firstAttribute="top" secondItem="JWV-Cy-aCK" secondAttribute="bottom" constant="18" id="Orl-Zg-oex"/>
+                            <constraint firstItem="I39-pa-0vE" firstAttribute="centerY" secondItem="JWV-Cy-aCK" secondAttribute="centerY" id="PMG-oE-H1Y"/>
+                            <constraint firstAttribute="bottom" secondItem="0E5-4A-aya" secondAttribute="bottom" constant="15" id="Tif-Uh-Jjp"/>
+                            <constraint firstAttribute="trailing" secondItem="I39-pa-0vE" secondAttribute="trailing" constant="20" id="ZHD-JF-yAs"/>
+                            <constraint firstItem="JWV-Cy-aCK" firstAttribute="top" secondItem="ywK-XU-zZ2" secondAttribute="top" constant="18" id="pEx-ca-4zb"/>
+                            <constraint firstAttribute="bottom" secondItem="jMh-eL-gpc" secondAttribute="bottom" id="qfQ-L7-Rf6"/>
+                            <constraint firstAttribute="trailing" secondItem="0E5-4A-aya" secondAttribute="trailing" constant="20" id="t5H-2t-D6t"/>
+                            <constraint firstItem="0E5-4A-aya" firstAttribute="leading" secondItem="ywK-XU-zZ2" secondAttribute="leading" constant="20" id="zYv-QW-FQ4"/>
+                            <constraint firstItem="JWV-Cy-aCK" firstAttribute="leading" secondItem="ywK-XU-zZ2" secondAttribute="leading" constant="20" id="zwO-ai-tIH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ywK-XU-zZ2" secondAttribute="bottom" id="MTK-7E-AdE"/>
+                    <constraint firstAttribute="trailing" secondItem="ywK-XU-zZ2" secondAttribute="trailing" id="OdK-uG-Is8"/>
+                    <constraint firstItem="ywK-XU-zZ2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UYI-xF-QV8"/>
+                    <constraint firstItem="ywK-XU-zZ2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZM6-rs-xrG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentLbl" destination="0E5-4A-aya" id="IC1-ge-xHa"/>
+                <outlet property="itemSwitch" destination="I39-pa-0vE" id="uZr-a6-Mr1"/>
+                <outlet property="lineBottomView" destination="jMh-eL-gpc" id="9Oi-QW-grM"/>
+                <outlet property="titleLbl" destination="JWV-Cy-aCK" id="tdD-HO-sqV"/>
+            </connections>
+            <point key="canvasLocation" x="170.28985507246378" y="66.964285714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="111111&amp;FFFFFF">
+            <color red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="1979FF">
+            <color red="0.098039215686274508" green="0.47450980392156861" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="666666&amp;CFCFCF">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="E3E3E3&amp;666666">
+            <color red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FFFFFF&amp;121212">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

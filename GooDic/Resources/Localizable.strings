@@ -1,0 +1,354 @@
+/* 
+  Localizable.strings
+  GooDic
+
+  Created by ttvu on 6/5/20.
+  Copyright © 2020 paxcreation. All rights reserved.
+*/
+
+"suggestion.detail.title" = "goo辞書";
+"suggestion.feedback.title" = "フィードバック";
+"suggestion.empty" = "言い換え候補は ありません";
+"suggestion.idiomEmpty" = "候補はありません。
+誤りやすい言葉・言い回しを
+検索しました。";
+"suggestion.thesaurus" = "候補はありません。
+よく使われる言い換え・類語を
+検索しました。";
+
+"dictionary.title" = "辞書検索";
+"dictionary.result.title" = "goo辞書";
+
+"home.cell.noTitle" = "タイトルなし";
+"home.cell.noContent" = "内容なし";
+"home.selectdraft.over" = "一括選択できるのは20件までです。";
+
+"draft.title" = "すべての下書き";
+"draft.editMode.title" = "%d件を選択";
+"draft.barButtonItem.edit" = "編集";
+"draft.barButtonItem.selectAll" = "一括選択";
+"draft.barButtonItem.deselectAll" = "選択解除";
+"draft.barButtonItem.cancel" = "キャンセル";
+"draft.barButtonItem.delete" = "削除";
+"draft.barButtonItem.move" = "移動...";
+
+"trash.title" = "ゴミ箱";
+"trash.deletionAll.message" = "ゴミ箱を空にします。よろしいですか？";
+"trash.deletionAll.cancel" = "キャンセル";
+"trash.deletionAll.ok" = "OK";
+"trash.noData" = "ゴミ箱は空です。";
+"trash.action.pushBack" = "戻す";
+"trash.deletion.message" = "下書きを削除しますか？\n下書きは完全に削除され、復元はできません。";
+
+"reference.copyAll" = "すべてコピー";
+"reference.placeholder.title" = "タイトルなし";
+"reference.placeholder.content" = "内容なし";
+
+"agreement.confirm.message" = "%@ を終了してもいいですか？";
+"agreement.confirm.close" = "終了";
+"agreement.confirm.return" = "戻る";
+"agreement.new.title" = "利用規約が変更されました";
+"agreement.new.message" = "続けるには利用規約をお読みの上、
+同意いただく必要があります。";
+"agreement.new.ok" = "OK";
+
+"tutorial.next" = "次へ";
+"tutorial.start" = "はじめる";
+"tutorial.skip" = "スキップ";
+
+"creation.save" = "保存";
+"creation.saveMessage" = "下書きを保存しました";
+"creation.word" = "字";
+"creation.proofreading" = "校正";
+"creation.paraphrase" = "言い換え";
+"creation.placeholder.title" = "タイトル入力";
+"creation.placeholder.content" = "本文入力";
+"creation.placeholder.search" = "検索する言葉を入力";
+"creation.placeholder.replace" = "置換する言葉を入力";
+"creation.barItem.dictionary" = "辞書";
+
+"menu.noAccount" = "登録なし";
+"menu.registeredDevice" = "登録済の端末";
+"menu.unregisteredDevice" = "未登録の端末";
+"menu.cell.notification" = "お知らせ";
+"menu.cell.trash" = "ゴミ箱";
+"menu.cell.share" = "友達に紹介する";
+"menu.cell.setting" = "環境設定";
+"menu.cell.help" = "ヘルプ";
+"menu.cell.terms" = "サービス利用規約";
+"menu.cell.appPrivacyPolicy" = "プライバシーポリシー";
+"menu.cell.privacyPolicy" = "プライバシーポリシー";
+"menu.cell.personalInformation" = "個人情報の取り扱い";
+"menu.cell.openLicense" = "オープンライセンス";
+"menu.cell.commercialTransactions" = "特定商取引法に基づく表示";
+"menu.cell.shareChargePC" = "PC版のURLを送る";
+"menu.cell.openGooTwitter" = "公式Twitter";
+"menu.note.premium" = "PC版は、PCより下記にアクセスして「ログイン」からご利用ください。\n";
+"menu.note.premium.link" = "https://dictionary.goo.ne.jp/info/app/";
+"menu.cell.requestPremium" = "プレミアムプランのご紹介";
+"menu.cell.item.premiumLimited" = "プレミアム限定";
+"menu.cell.item.oneMonthFreeFirstTime" = "初回なら1ヶ月無料";
+"menu.cell.item.pc" = "PC版";
+"menu.cell.item.noAds" = "広告なし";
+"menu.cell.item.detailedSearch" = "詳細検索";
+"menu.cell.item.replaceFunction" = "置換機能";
+"menu.shareContent" =
+"goo辞書が作ったメモアプリ『%@』
+
+表現豊かな文章が作れて、語彙力アップ！
+・書きながら辞書を調べられる
+・誤りやすい日本語をチェックできる
+・言い換え(類語)表現を教えてくれる
+
+【iPhone/Android版・無料】
+https://dictionary.goo.ne.jp/info/app/";
+"menu.share.charge.PC" = "PC版（有料）は、PCより下記にアクセスして「ログイン」からご利用ください。
+https://dictionary.goo.ne.jp/info/app/";
+
+"folder.uncategorized" = "未分類";
+"folder.browser.title" = "フォルダ";
+"folder.selection.title" = "移動先を選択";
+"folder.selection.cancel" = "キャンセル";
+"folder.selection.done" = "ここに移動";
+"folder.creationAlert.title" = "新規フォルダ";
+"folder.creationAlert.message" = "名前を入力してください。";
+"folder.creationAlert.cancel" = "キャンセル";
+"folder.creationAlert.ok" = "作成";
+"folder.renameAlert.title" = "フォルダ名の変更";
+"folder.renameAlert.message" = "名前を入力してください。";
+"folder.renameAlert.ok" = "名前を変更";
+"folder.confirmationAlert.title" = "フォルダを削除しますか？";
+"folder.confirmationAlert.message" = "フォルダ内の下書きも削除されます。";
+"folder.confirmationAlert.ok" = "OK";
+"folder.action.rename" = "変更";
+"folder.action.delete" = "削除";
+"folder.placeholder" = "新しいフォルダ";
+"folder.existName" = "フォルダ名が重複しています。";
+"folder.createFolder" = "新規フォルダを作成";
+"folder.emptyName" = "フォルダ名を入力してください。";
+
+"alert.ok" = "OK";
+"alert.tryAgain" = "Try Again";
+"alert.no" = "いいえ";
+"alert.yes" = "はい";
+"alert.cancel" = "キャンセル";
+"alert.network.title" = "ネットワークエラー";
+"alert.network.message" = "通信状況を確認のうえ、再度実行してください。";
+"alert.server.title" = "サーバーエラー";
+"alert.server.message" = "通信状況を確認のうえ、再度実行してください。";
+
+"alert.thisDevices" = "使用中の端末";
+"alert.otherDevices" = "他の端末";
+
+"account.title" = "アカウント";
+"account.accountID" = "アカウントID";
+"account.notLoginYet" = "今はログインしていない";
+"account.syncData" = "バックアップ設定";
+"account.deviceRegister" = "登録備末";
+"account.logout" = "ログアウト";
+"account.login" = "ログイン";
+"account.logoutConfirmation.title" = "ログアウトしますか？";
+"account.logoutConfirmation.message" = "ログアウトするとクラウドを利用できなくなります。";
+"account.logoutConfirmation.ok" = "OK";
+"account.logoutConfirmation.cancel" = "キャンセル";
+
+"server.error.title.maintenance" = "メンテナンス中（参照、更新共に不可";
+"server.error.title.maintenanceCannotUpdate" = "メンテナンス中（参照、更新共に不可";
+"server.error.title.terminalRegistration" = "端末登録エラー（自端末が登録されていない)";
+"server.error.title.draftNotFound" = "下書きが存在しない";
+"server.error.title.folderNotFound" = "フォルダが存在しない";
+"server.error.title.backupNotFound" = "バックアップが存在しない";
+"server.error.title.limitDraftRegistrtion" = "下書き登録数上限エラー";
+"server.error.title.executionError" = "下書き登録排他エラー";
+"server.error.title.duplicateFolder" = "フォルダ名重複エラー";
+"server.error.title.sessionTimeOut" = "セッションタイムアウトエラー";
+"server.error.title.authenticationError" =  "認証エラー";
+"server.error.title.otherError" = "その他エラー";
+
+// Error on Creation screen
+"creation.error.unregisteredDevice" = "端末の登録を解除しました。クラウドを利用する場合は再度端末登録を行ってください。この下書きは、端末の未分類フォルダに保存されます。";
+"creation.error.execution" = "この下書きは、他の端末で更新されました。
+「他の端末」で更新した内容で上書きするか、「使用中の端末」の内容を残すかを選択してください。";
+"creation.error.limitation" = "クラウドの下書きが、上限1,000件に達したため保存できません。この下書きは、端末の未分類フォルダに保存されます。";
+"creation.error.limitationPaid" = "クラウドの下書きが、上限1万件に達したため保存できません。この下書きは、端末の未分類フォルダに保存されます。";
+"creation.error.movelimit" = "クラウドの下書きが、上限1,000件に達したため移動できません。";
+"creation.error.movelimitPaid" = "クラウドの下書きが、上限1万件に達したため移動できません。";
+"creation.error.folderNotFound" = "選択したフォルダが削除されました。この下書きは、端末の未分類フォルダに保存されます。";
+"creation.error.maintenance" = "メンテナンス中のため、クラウドへの保存ができません。この下書きは、端末の未分類フォルダに保存されます。";
+"creation.error.authentication" = "メンテナンス中のため、クラウドへの保存ができません。この下書きは、端末の未分類フォルダに保存されます。";
+"creation.error.other.title" = "エラー：%@";
+"creation.error.other.message" = "しばらく経ってから再度お試しください。解消しない場合は、エラーコードを添えてお問い合わせください。この下書きは、端末の未分類フォルダに保存されます。";
+"creation.error.timeOut" = "通信状況を確認するか、しばらく経ってから再度お試しください。";
+"creation.closeDraftWithoutSaving" = "内容を保存せずに下書きを閉じますか？編集中の内容を残したい場合は「キャンセル」を選択して、下書きを別のアプリ等にコピーしてください。";
+"creation.overLenght" = "上限5万字に達したため、貼り付ける文章を切り捨てました。";
+"creation.overLenghtReplace" = "上限5万字を超えるため、置換できません。置換する言葉を短くしてください。";
+"creation.overLenghtInput" = "上限5万文字に達したため、文章を切り捨てました。";
+"creation.overTitleLenghtInput" = "上限2千字に達したため、貼り付ける文章を切り捨てました。";
+
+// Error on Menu screen
+"menu.cannotGetInfo" = "取得できません";
+"menu.error.registerDevice.maintenance" = "メンテナンス中のため、端末登録ができません。しばらく経ってから再度お試しください。";
+"menu.error.login.maintenance" = "メンテナンス中のため、クラウドが利用できません。しばらく経ってから再度お試しください。";
+"menu.error.login.maintenanceCannotUpdate" =
+"メンテナンス中のため、クラウドを利用できません。
+【端末登録済の方】
+ ログインすると、クラウドの下書きを閲覧できます。下書きを端末に保存すれば、更新できます。";
+"menu.error.deviceStatus.maintenance" = "メンテナンス中のため、端末登録状態を取得できません。";
+
+// Error on Cloud Drafts
+"drafts.error.exclusiveError" = "他の端末で並び替えが行われたため一覧を再読み込みします。";
+"drafts.error.unregisteredDevice" = "端末の登録を解除しました。クラウドを利用する場合は再度端末登録を行ってください。";
+"drafts.error.maintenance" = "メンテナンス中のため、クラウドを利用できません。しばらく経ってから再度お試しください。";
+"drafts.error.maintenanceCannotUpdate" =
+"メンテナンス中のため、クラウドでの編集ができません。 クラウドの下書きを端末に移動して、編集してください。";
+"drafts.error.folderNotFound" = "選択したフォルダは削除されています。";
+"drafts.error.draftNotFound" = "この下書きは削除されています。";
+"drafts.error.backupNotFound" = "バックアップデータが見つかりません。";
+"drafts.error.delete.maintenance" = "メンテナンス中のため、クラウドの下書きを削除できません。しばらく経ってからお試しください。";
+"drafts.error.createDraft.maintenance" = "メンテナンス中のため、クラウドに下書きを作成できません。しばらく経ってからお試しください。";
+"draftsAtHome.error.maintenanceCannotUpdate" = "メンテナンス中のため、クラウドでの編集ができません。 クラウドの下書きを端末に移動して、編集してください。";
+"home.error.createDraft.maintenance" = "メンテナンス中のため、クラウドに下書きを作成できません。しばらく経ってからお試しください。";
+
+// Error on Naming
+"createFolder.error.unregisteredDevice" = "端末の登録を解除しました。クラウドを利用する場合は再度端末登録を行ってください。";
+"createFolder.error.maintenance" = "メンテナンス中のため、クラウドにフォルダを作成できません。しばらく経ってからお試しください。  ";
+"createFolder.error.duplicate" = "フォルダ名が重複しています。";
+"createFolder.error.limit" = "上限1,000件に達したため、フォルダを作成できません。";
+"createFolder.error.limitPaid" = "上限1万件に達したため、フォルダを作成できません。";
+"renameFolder.error.maintenance" = "メンテナンス中のため、フォルダ名の変更ができません。しばらく経ってからお試しください。";
+
+// Error on Cloud Folders
+"folderBrowser.error.unregisteredDevice" = "端末の登録を解除しました。クラウドを利用する場合は再度端末登録を行ってください。";
+"folderBrowser.error.maintenance" = "メンテナンス中のため、クラウドを利用できません。しばらく経ってから再度お試しください。";
+"folderBrowser.error.maintenanceCannotUpdate" = "メンテナンス中のため、クラウドでの編集ができません。クラウドの下書きを端末に移動して、編集してください。";
+
+"folderBrowser.delete.error.folderNotFound" = "このフォルダは削除されています。";
+"folderBrowser.delete.error.maintenance" = "メンテナンス中のため、クラウドのフォルダを削除できません。しばらく経ってからお試しください。";
+
+"folderBrowser.error.receiptInvalid" = "無課金による権限エラー";
+"folderBrowser.error.exclusiveError" = "他の端末で並び替えが行われたためフォルダ一覧を再読み込みします。";
+
+"folderSelection.error.folderNotFound" = "このフォルダは削除されています。";
+"folderSelection.error.draftNotFound" = "この下書きは削除されています。";
+"folderSelection.error.maintenance.draftsCannotBeMovedFromCloud" = "メンテナンス中のため、クラウドから下書きの移動ができません。しばらく経ってからお試しください。";
+"folderSelection.error.maintenanceCannotUpdate" = "メンテナンス中のため、移動した下書きはクラウドから削除されません。復旧後に削除してください。";
+"folderSelection.error.maintenance.cannotMoveToCloudFolder" = "メンテナンス中のため、クラウドへの移動ができません。しばらく経ってからお試しください。";
+
+"errorDevice.error.maintenance" = "メンテナンス中のため、端末登録ができません。しばらく経ってから再度お試しください。";
+
+
+
+"server.error.other.title" = "エラー：%@";
+"server.error.other.message" = "しばらく経ってから再度お試しください。解消しない場合は、エラーコードを添えてお問い合わせください。";
+"server.error.other.hyperlink" = "お問い合わせ";
+"server.error.timeOut" = "通信状況を確認するか、しばらく経ってから再度お試しください。";
+"server.error.unregisteredDevice" = "端末の登録を解除しました。クラウドを利用する場合は再度端末登録を行ってください。";
+"error.otherErrorAtLocal" = "端末に問題が発生しました。";
+"sdk.error.refresh.session" = "認証情報を更新できませんでした。再度ログインしてください。";
+
+"registerDevices.alert.releaseDevice" = "は解除されました。";
+"screenName.screenLogin" = "ログイン選択画面";
+"gatracking.screenName" = "screen_name";
+"screenName.screenDraft" = "下書き画面";
+"screenName.screenFolder" = "フォルダ画面";
+"screenName.screenMenu" = "メニュー画面";
+"screenName.screenForceLogout" = "強制ログアウト画面";
+"screenName.screenCloudFolderSelection" = "移動先選択画面";
+"screenName.screenRegister" = "端末登録画面";
+"registerDevices.registertwodevice" = "登録済の端末が2台あります。この端末を登録するには、1台を解除してください。";
+"registerDevices.registergreaterthantwodevice" = "登録済の端末が3台以上あります。この端末を登録するには、合計2台になるまで解除してください。";
+"registerDevices.limitDevices" = "クラウドを利用する端末を登録します。最大2台の端末で利用できます。";
+"registerDevices.subscribed" = "クラウドを利用する端末を登録します。端末台数は無制限でご利用いただけます。";
+"login.server.error.timeOut" = "通信状況を確認するか、しばらく経ってから再度お試しください。";
+"login.server.error.maintain" = "メンテナンス中のため、クラウドが利用できません。しばらく経ってから再度お試しください。「ログインしない」を選択すると、その他の機能を利用できます。";
+"login.server.error.other" = "しばらく経ってから再度お試しください。解消しない場合は、エラーコードを添えてお問い合わせください。";
+"login.server.error.cannotBeUpdate" = "「メンテナンス中のため、クラウドを利用できません。下書きの作成や更新は、端末上でのみ可能です。\n【初めて利用する方】\n「キャンセル」で前の画面に戻り、「ログインしない」を選択してください。\n【端末登録済の方】\nログインすると、クラウドの下書きを閲覧できます。下書きを端末に保存すれば、更新できます。」";
+
+"login.server.error.cannotBeUpdate" = "メンテナンス中のため、クラウドを利用できません。下書きの作成や更新は、端末上でのみ可能です。
+【初めて利用する方】
+「ログインしない」を選択してください。
+【端末登録済の方】
+ログインすると、クラウドの下書きを閲覧できます。下書きを端末に保存すれば、更新できます。";
+"listDevivice.server.error.cannotBeUpdate" = "メンテナンス中のため、クラウドを利用できません。\n【端末登録済の方】 \nログインすると、クラウドの下書きを閲覧できます。下書きを端末に保存すれば、更新できます。";
+"listDevivice.messageError.install" = "※同機種が登録されています。アプリを再インストールした場合は、「登録済の端末」から以前の登録を解除して、再度登録してください。";
+"listDevice.note" = "登録解除した端末からは、クラウドにアクセスできなくなります。端末に残したい下書きは、あらかじめクラウドからその端末に移動してください。";
+"login.loadingAPIListDevices" = "Loading API List Devices";
+
+"banner.saveCloudDraft" =
+"クラウドでは、自動保存のON/OFFを設定メニューで変更できます。
+OFFの間は、必ず手動で保存してください。";
+"banner.pullToRefresh" = "下に引っ張ると、一覧を更新できます。";
+
+// Tracking event
+"tracking.displayMode.light" = "ライト";
+"tracking.displayMode.dark" = "ダーク";
+
+"premium.login" = "ログインしてプレミアムに登録";
+"premium.message.success" = "プレミアム登録が完了しました。他の端末でもご利用いただいている場合は、アプリを再起動すると、その端末でもプレミアムをご利用いただけるようになります。";
+"premium.register" = "登録する";
+"premium.message.alreadyRegistered" = "%@決済でプレミアム登録済です。アプリを再起動し、プレミアムをご利用ください。";
+"premium.receipt.err.400.message" = "課金情報の登録処理中にエラーが発生しました。「以前の購入を復元」を選択し、再度登録してください。";
+"premium.receipt.err.409.message" = "プレミアム登録済です。登録時のgooIDでログインし、「以前の購入を復元」を再度お試しください。";
+"premium.receipt.err.410.message" = "別のApple IDでプレミアム登録済の可能性があります。登録時のApple IDでログインし、プレミアムがご利用いただけるかお試しください。";
+"premium.receipt.err.500.message" = "システムエラーが発生しました";
+"premium.receipt.invalid" = "処理を完了できませんでした。再度お試しください。";
+"premium.cancel.subcription" = "プレミアム登録の解除";
+"premium.note" = "・プレミアムプランの登録には、gooIDログイン（登録無料）が必要です。gooIDとは、gooで提供する各種サービスをご利用いただくためのIDです。
+・プレミアムプランは、1ヶ月単位のサブスクリプションサービスです。更新日の24時間前までに解約されなかった場合、登録が自動更新され、月額料金480円（税込）が発生いたします。
+・初めてプレミアムプランに登録する場合、決済は登録後すぐには行われず、無料体験期間が終了すると自動的に行われます。
+・登録はいつでも解除できます。端末の「設定」→「Apple ID」→「サブスクリプション」から手続きしてください。料金や更新日も「サブスクリプション」で確認できます。
+・PC版は、PCより 「https://dictionary.goo.ne.jp/info/app/」にアクセスし、「ログイン」からご利用ください。\n";
+"premium.note2" = "・PC版の動作保証環境は、下記となります。
+　【OS】Windows10、Windows11、macOS Big Sur、macOS Monterey
+　【ブラウザ】Google Chrome 最新版、Safari 最新版（macOSのみ）";
+
+"accountInfo.premium.apple" = "iTunes Store決済";
+"accountInfo.premium.android" = "Google Play決済";
+"accountInfo.premium.other" = "gooストア決済";
+
+"premium.apple" = "iTunes Store";
+"premium.android" = "Google Play";
+"user_have_not_ever_been_purchase" = "「以前の購入」が存在しないアカウントである";
+"SettingFont.AlertAutoSave" = "自動保存を「ON」にした場合、文章作成画面で文章を変更すると、一定時間毎にデータ通信が発生します。";
+"Sort.Title" = "タイトル";
+"Sort.CreateDate" = "作成日";
+"Sort.UpdateDate" = "更新日";
+"Sort.Manual" = "手動";
+"premium.message.alertLoginScreen" = "プレミアムプランの登録には、gooIDログインが必要です。gooIDは無料で作成できます。";
+
+
+// Setting Enviromental
+"SettingEnviromental.AutoCloudSaveCell.Title" = "クラウドの自動保存";
+"SettingEnviromental.AutoCloudSaveCell.Content" = "オンにするとクラウドの下書きが自動保存されます。";
+
+"SettingEnviromental.BackupCell.Title" = "バックアップ";
+"SettingEnviromental.BackupCell.On" = "オン";
+
+
+// Setting Backup
+"SettingBackup.BackupCreationCell.TitleBackupOnOrOff" = "バックアップ作成";
+"SettingBackup.BackupCreationCell.ContentBackupOnOrOff" = "オンにするとクラウドの下書きのバックアップを作成します。";
+
+"SettingBackup.BackupCreationRuleCell.TitleBackupManual" = "手動保存時に作成する";
+"SettingBackup.BackupCreationRuleCell.ContentBackupManual" = "文章作成画面の保存ボタンをタップした時に作成します。※文章に差分がある時のみ";
+
+"SettingBackup.BackupCreationRuleCell.TitleBackupRegular" = "定期的に作成する";
+"SettingBackup.BackupCreationRuleCell.ContentBackupRegular" = "文章作成画面を開いている間、設定した間隔で作成します。※文章に差分がある時のみ";
+
+"SettingBackup.BackupCreationRuleTitleCell.Title" = "バックアップ作成ルール";
+
+"SettingBackup.Minute" = "分毎";
+"SettingBackup.AlertEnableBackup.Title" = "オンにすると、クラウドの下書きのバックアップを作成します（作成時に通信が発生します）。バックアップが30件を超えた場合は、古いものから削除されます。";
+
+"SettingBackup.Error.SettingBackupNotFound" = "設定値が存在しません。";
+
+"BackUpSetting.NotFound" = "バックアップデータが作成されていません。";
+
+"BackupList.Backup.Title" = "のバックアップ";
+"BackupList.Created.Title" = "作成中の文章";
+
+"BackupDetail.Restore.Message" = "バックアップを選択中のフォルダに復元しました。「OK」で、選択中のフォルダ画面を移動します。
+";
+
+"BackupDetail.RestoreConfirm.Message" = "このバックアップを復元してよろしいですか？
+";
